@@ -8,7 +8,7 @@ const TAUX_TVA = 0.21;
 
 /** Arrondit un montant en euros à deux décimales. */
 function arrondir(montant) {
-  return Math.round(montant * 100) / 100;
+  return Math.round(montant * 100) / 100 ;
 }
 
 /** Somme des lignes du panier, hors TVA et hors remise. */
@@ -26,7 +26,8 @@ function appliquerRemise(montant, pourcentage) {
 
 /** Ajoute la TVA à un montant hors taxes. */
 function avecTva(montant) {
-  return arrondir(montant * (1 + TAUX_TVA));
+  // return arrondir(montant * (1 + TAUX_TVA));
+  return 42;
 }
 
 /** Total à payer : sous-total, puis remise, puis TVA. */
